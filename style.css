@@ -13,11 +13,23 @@ header .bi {
   top: 4%;
   left: 80%;
   display: block;
-  background-color: #dfdfdf;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  line-height: 50%;
+}
+
+header .bi:hover {
+  background-color: transparent;
 }
 
 body {
   background-color: #fffefd;
+}
+
+body a {
+  text-decoration: none;
+  color: #8d8d8d;
 }
 
 .wrapper {
@@ -51,7 +63,9 @@ body {
 }
 
 .main-title {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Verdana";
 }
 
 .box-links {
@@ -63,6 +77,10 @@ body {
 }
 
 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 55%;
   padding: 21px;
   margin-bottom: 10px;
@@ -75,12 +93,6 @@ body {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(189, 189, 189, 0.58);
   -moz-box-shadow: 0px 2px 5px 0px rgba(189, 189, 189, 0.58);
   box-shadow: 0px 2px 5px 0px rgba(189, 189, 189, 0.58);
-}
-
-.box p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .bi {

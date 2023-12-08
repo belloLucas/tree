@@ -27,4 +27,5 @@ const changeTheme = function () {
   themeBtn.addEventListener("click", changeTheme);
 };
 
+changeTheme();
 themeBtn.addEventListener("click", changeTheme);

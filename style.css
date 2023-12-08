@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+
+header .bi {
+  position: absolute;
+  top: 4%;
+  left: 80%;
+  display: block;
+  background-color: #dfdfdf;
+}
+
+body {
+  background-color: #fffefd;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.main-title,
+.subtitle {
+  margin-bottom: 15px;
+  color: #3c383d;
+}
+
+.main-title {
+  font-weight: 500;
+}
+
+.box-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #8d8d8d;
+}
+
+.box {
+  width: 55%;
+  padding: 21px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: 1px solid rgba(204, 204, 204, 0.719);
+  background-color: #ffff;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(189, 189, 189, 0.58);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(189, 189, 189, 0.58);
+  box-shadow: 0px 2px 5px 0px rgba(189, 189, 189, 0.58);
+}
+
+.box p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi {
+  position: absolute;
+  left: 94%;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  display: none;
+  transition: 0.3s;
+}
+
+.bi:hover {
+  background-color: #dfdfdf;
+}
+
+.box:hover {
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(189, 189, 189, 0.58);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(189, 189, 189, 0.58);
+  box-shadow: 0px 4px 5px 0px rgba(189, 189, 189, 0.58);
+  transform: scale(1.02);
+}
+
+.box:hover .bi {
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .box {
+    width: 70%;
+  }
+
+  .bi {
+    left: 93%;
+  }
+}
+
+@media (max-width: 750px) {
+  .box {
+    width: 80%;
+  }
+
+  .bi {
+    left: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  header .bi {
+    top: 2%;
+    left: 86%;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .bi {
+    display: inline-block;
+    left: 81%;
+  }
+
+  .box:hover {
+    transform: none;
+  }
+
+  .box:hover .bi {
+    display: inline-block;
+  }
+}
